@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆界面</title>
+    <script>
+            let promise = fetch()
+            function Information()
+            {
+                var str = prompt("您确定您的个人信息吗？")
+                let 
+                if(str){
+                    alert("个人信息：\n姓名：云家园\n 学号：\n 性别：男\n 地址：江西省抚州市\n 手机号：18170415733\n");   
+                }
+ 
+            }
+    </script>
+    <style>
+        /*.Out
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            height: 800px;
+        }*/
+        .box_out
+        {
+            background-color: white;/*背景颜色*/
+            border-radius: 8px;
+            color: rgb(85, 83, 83);/*框内文字颜色*/
+            max-width: 400px;
+            padding: 1% 2%;
+            margin: 3% auto 5%;
+            height: 450px;
+            font-size-adjust: inherit;
+            display: flex;
+            flex-direction: column;
+            color: black;
+        } 
+        .box_img
+        {
+            margin: 30px 10px;
+            width: 100%;
+            height:50px;
+            display: flex;
+            justify-content: center;
+        }
+        .box_title
+        {
+            width: 100%;
+            height:50px;
+            display: flex;
+            justify-content: center;
+        }
+        body
+        {
+            background-image: url('http://pic54.nipic.com/file/20141201/3822951_190204573000_2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input
+	    {
+    	    border: 1px solid #ccc;
+            padding: 9px 0px;
+            border-radius: 3px;
+            padding-left:25px;
+		    margin-left: 0px;
+		    width: 92%;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+        }
+        input:focus
+	    {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+        .box_click
+        {
+            width: 100%;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            margin-top:20px;
+        }
+        .click
+        {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            border-radius: 6px;
+            color: rgba(255, 255, 255, 0.945);
+            background-color: rgb(66, 142, 204);
+            color: lavender;
+            border-color: #5882f3;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .click:hover 
+        {
+            background-color: rgb(56, 101, 184);
+            color: rgb(248, 248, 248);
+        }
+    </style>
+</head>
+
+<body>
+        <span class="box_out">
+            <div class="box_img">
+                <img src="img/家园logo.png" alt="家园logo" width="100" height="100"></img><br>
+            </div>
+            <div class="box_title">
+                <h3 style="font-size: 30px;">登陆</h3><br>
+            </div>
+            <div>
+                <p style="font-size: 15px;"><strong>账号</strong>：</p><input type="text" name="xuehao" placeholder="请输入学号/工资号"
+                 style="background-image: url(img/person.png); background-repeat: no-repeat; background-position: left;"><br>
+
+                <p style="font-size: 15px;"><strong>密码</strong>：</p><input type="password" name="mima" placeholder="请输入密码"
+                 style="background-image: url(img/lock.png);background-repeat: no-repeat; background-position: left;">
+            </div>
+
+            <div class="box_click">
+                <a href=""></a>
+                <input type="button" class="click" onclick="Information()" value="Login"/>
+            </div>
+
+        </span>
+</body>
+</html>
